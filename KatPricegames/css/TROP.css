@@ -1,0 +1,69 @@
+html
+{
+    background-image: url(../img/main_menu\ \(2\).png) ;
+    background-size: 200%;
+}
+body{
+    background-color: #f8b4b4;
+    width: 50%;
+    margin: auto;
+    margin-top: 70px;
+    padding: auto;
+}
+.navLogo{
+    display: block;
+    margin: auto;
+    padding: auto;
+    
+}
+.navLogo2{
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 10%;
+    
+}
+nav{
+    text-align: center;
+}
+#main_menu{
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 80%;
+}
+audio{
+    display: block;
+    margin: auto;
+    padding: auto;
+    color: black;
+}
+#main_menutext{
+    text-align: center;
+    font-size:x-large 
+}
+#aboutgame{
+    text-align: center;
+}
+hr{
+   border: solid #600502;
+}
+div.gallery {
+    
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.gallery img {
+    display: inline;
+    margin: 5px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  .footer{
+    text-align: center
+}
