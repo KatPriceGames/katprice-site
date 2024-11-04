@@ -94,6 +94,8 @@ hr#red {
     body {
 
         width: 100%;
+        margin: auto;
+        margin-top: 200px;
     }
 
     div.gallery img {
