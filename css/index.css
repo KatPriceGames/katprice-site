@@ -4,72 +4,62 @@ html {
 }
 
 body {
-
-    width: 50%;
+    width: 60%;
     margin: auto;
-    margin-top: 250px;
-
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #800000;  /* Wine Red background color */
 }
 
-.navLogo {
-    display: block;
-    margin: auto;
-    padding: auto;
-
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-.navLogo2 {
-    display: block;
-    margin: auto;
-    padding: auto;
-    width: 10%;
-
-}
-
-nav {
+#description {
+    font-size: 1.25rem;
+    color: #fff;
     text-align: center;
-
-}
-
-#splash {
-    float: left;
-    display: block;
-    margin: auto;
-    padding: auto;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#welcome {
-    display: inline;
-    font-size: larger;
-    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
 }
 
 .clearfix {
     overflow: hidden;
 }
 
-ul {
-    display: inline;
-    text-align: center;
-}
-
-hr {
-    border: solid #600502;
-}
-
+/* Gallery Section */
 div.gallery {
-
-    overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    flex-wrap: wrap; /* Ensures the images wrap to the next row on smaller screens */
+    margin-top: 40px;
+    gap: 20px; /* Adds space between items */
+}
+
+div.gallery a {
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
 }
 
 div.gallery img {
-    display: inline;
-    margin: 5px;
+    display: block;
+    margin: 0 auto;  /* Ensures the images are centered */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    max-width: 100%;  /* Ensures the image doesn't overflow */
+    height: auto;
+}
+
+div.gallery img:hover {
+    transform: scale(1.1);
 }
 
 div.desc {
@@ -77,30 +67,34 @@ div.desc {
     text-align: center;
 }
 
-hr#red {
-    background-color: red;
-}
-
-#images {
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
     background-color: #600502;
-    border-color: #600502;
+    padding: 10px;
 }
 
-.footer {
-    text-align: center
+footer p {
+    color: white;
+    font-size: 1rem;
 }
 
+/* Responsive Styles */
 @media (max-width: 600px) {
     body {
-
         width: 100%;
         margin: auto;
-        margin-top: 200px;
+        margin-top: 50px;
     }
 
     div.gallery img {
-        width: 170px;
-        display: inline;
+        width: 150px;
         margin: 5px;
+    }
+
+    #description {
+        font-size: 1rem;
+        padding: 15px;
     }
 }
