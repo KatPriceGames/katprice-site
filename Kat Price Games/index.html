@@ -8,6 +8,7 @@
     <link rel="icon" href="img/KPG.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/gallery.js" defer></script>
 </head>
 
 <body>
@@ -38,19 +39,45 @@
     </p>
     <hr>
     <div id="image">
-        <div class="clearfix">
-            <div class="gallery">
-                <a href="about.html">
-                    <img id="imgabout" src="img/KPG.png" alt="" width="200" height="200">
-                    <div class="desc">About Kat Price</div>
-                </a>
-                <a href="games.html">
-                    <video autoplay loop width="500" height="200">
-                        <source src="videos/game_splash_screen.webm" type="video/webm">
-                    </video>
-                    <div class="desc">Projects</div>
-                </a>
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="img/KPG.png" alt="Kat Price Games Logo" style="width:100%">
+                <div class="text">About Kat Price</div>
+                <a href="about.html" class="slide-link"></a>
             </div>
+    
+            <div class="mySlides fade">
+                <video autoplay loop muted style="width:100%">
+                    <source src="videos/game_splash_screen.webm" type="video/webm">
+                </video>
+                <div class="text">Projects</div>
+                <a href="games.html" class="slide-link"></a>
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="img/main_menu (1).png" alt="Kat's Adventure" style="width:100%">
+                <div class="text">Kat's Adventure</div>
+                <a href="KA.html" class="slide-link"></a>
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="img/main_menu (2).png" alt="The Rise of Pricey" style="width:100%">
+                <div class="text">The Rise of Pricey</div>
+                <a href="TROP.html" class="slide-link"></a>
+            </div>
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </div>
     <hr>

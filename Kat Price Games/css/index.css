@@ -1,15 +1,116 @@
-html
-{
+/* HTML and Body Styles */
+html {
     background-image: url(../img/main_menu\ \(2\).png);
     width: auto;
 }
-body{
+
+body {
     background-color: #f8b4b4;
     width: 50%;
     margin: auto;
     margin-top: 60px;
-    
 }
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+.mySlides img, .mySlides video {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Make the whole slide clickable */
+.slide-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 .navLogo{
     display: block;
     margin: auto;
@@ -76,72 +177,99 @@ hr{
 .footer{
     text-align: center
 }
-@media screen {
-    /*17" laptop screens */
-    @media (max-width: 1680px ) {
-        div.gallery{
-            padding-left: 75px;
-            flex-wrap: wrap;
-        }
-        
+
+/* Media Queries */
+@media screen and (max-width: 1680px) {
+    body {
+        width: 70%;
     }
-    @media (max-width: 800px) {
-        body {
-            
-            width: 100%;
-            margin: auto;
-            margin-top: 100px;
-            flex-wrap: wrap;
-        }
-        div.gallery{
-            padding-left: 30px;
-            flex-wrap: wrap;
-        }
     
-        div.gallery img {
-            width: 50%;
-            height: 10%;
-        }
-        div.gallery video {
-            width: 100%;
-
-        }
-        div#mainlogo{
-            width: 90%;
-            height: 10%;
-        }
-        div#mainlogo .navLogo{
-            display: none;
-
-        }
+    .slideshow-container {
+        max-width: 600px;
     }
-    @media (max-width: 600px) {
-        body {
-    
-            width: 80%;
-            margin: auto;
-            margin-top: 100px;
-            
-        }
-    
-        div.gallery img {
-            width: 50%;
-            height: 10%;
-            margin: auto;
-            padding: auto;
-            padding-left: 100px;
-        }
-        div.gallery video {
-            width: 100%;
+}
 
-        }
-        div#mainlogo{
-            width: 90%;
-            height: 10%;
-        }
-        div#mainlogo .navLogo{
-            display: none;
+@media screen and (max-width: 800px) {
+    body {
+        width: 90%;
+        margin-top: 50px;
+    }
+    
+    .slideshow-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    
+    .mySlides img, .mySlides video {
+        max-height: 300px;
+    }
+    
+    .prev, .next {
+        padding: 8px;
+        font-size: 16px;
+    }
+    
+    .text {
+        font-size: 14px;
+        padding: 6px;
+    }
+    
+    div#mainlogo .navLogo {
+        display: none;
+    }
+    
+    div#mainlogo .navLogo2 {
+        width: 20%;
+    }
+}
 
-        }
+@media screen and (max-width: 600px) {
+    body {
+        width: 95%;
+        margin-top: 30px;
+    }
+    
+    .slideshow-container {
+        padding: 5px;
+    }
+    
+    .mySlides img, .mySlides video {
+        max-height: 250px;
+    }
+    
+    .prev, .next {
+        padding: 6px;
+        font-size: 14px;
+    }
+    
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 4px;
+    }
+    
+    .text {
+        font-size: 12px;
+        padding: 4px;
+    }
+    
+    div#mainlogo .navLogo2 {
+        width: 30%;
+    }
+    
+    #welcome {
+        font-size: medium;
+    }
+}
+
+/* Touch device optimization */
+@media (hover: none) {
+    .prev, .next {
+        background-color: rgba(0,0,0,0.8);
+        padding: 12px;
+    }
+    
+    .slideshow-container {
+        touch-action: pan-y pinch-zoom;
     }
 }
