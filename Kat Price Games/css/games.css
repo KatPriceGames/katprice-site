@@ -1,0 +1,159 @@
+html {
+    background-image: url(../img/main_menu\ \(2\).png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: rgba(248, 180, 180, 0.95);
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Navigation */
+#navBar {
+    margin-bottom: 30px;
+}
+
+.navLogo {
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.navLogo2 {
+    display: block;
+    margin: auto;
+    width: 10%;
+    min-width: 50px;
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.navLogo2:hover {
+    transform: scale(1.1);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.gallery a {
+    text-decoration: none;
+    color: #600502;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+}
+
+.gallery a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.desc {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.disabled-link {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 300px;
+}
+
+.disabled-link .desc {
+    color: #666;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/* Dividers */
+hr {
+    border: none;
+    height: 2px;
+    background: #600502;
+    margin: 30px 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #600502;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #8a0804;
+}
+
+.footer i {
+    margin-right: 8px;
+}
+
+/* Utility Classes */
+.clearfix {
+    overflow: hidden;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .gallery {
+        gap: 20px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .gallery a {
+        max-width: 100%;
+    }
+}
