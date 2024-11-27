@@ -8,57 +8,103 @@
     <link rel="icon" href="img/KPV.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/gallery.js" defer></script>
 </head>
 
 <body>
-    <a href="../index.html"> &#8617; Back to Brand Select</a>
-    <div id="navBar">
-        <div id="mainlogo">
-            <a href="index.html"><img src="img/KPV.png" alt="Kat Price Games logo" class="navLogo2"></a>
-        </div>
-
-    </div>
-    <hr>
-    <div class="clearfix" style="text-align: center;">
-        <img src="img/splash_screen_1.png" alt="" width="60%" id="splash">
-        <u><b id="welcome">Welcome to the Kat Price Games website</b></u><br>
-        Hello and welcome to the Kat Price Games website on this site you can find
-        <dl>
-            <dt><b>Updates</b></li>
-            <dd>- steam updates</dd>
-            <dd>- Vtuber updates</dd>
-            <br>
-            <dt><b>News</b></dt>
-            <dd>- Katsu Vtuber news</dd>
-            <dd>- Stream and event dates </dd>
-        </dl>
-    </div>
-    </p>
-    <hr>
-    <div id="image">
-        <div class="clearfix">
-            <div class="gallery">
-                <a href="about.html">
-                    <img id="imgabout" src="img/KPV.png" alt="" width="200" height="200">
-                    <div class="desc">About Kat Price</div>
+    <header>
+        <nav id="navBar">
+            <div class="nav-container">
+                <a href="../index.html" class="back-button">
+                    <i class="fa fa-arrow-left"></i>
+                    Back to main page
                 </a>
+                <div id="mainlogo">
+                    <a href="index.html">
+                        <img src="img/KPV.png" alt="Kat Price Vtuber logo" class="navLogo2">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <hr>
+        <h1 id="welcome">Welcome to Kat Price Vtuber</h1>
+        
+        <section class="welcome-section">
+            <div class="info-container">
+                <div class="info-section">
+                    <h2><u>Updates</u></h2>
+                    <ul>
+                        <li>Stream Updates</li>
+                        <li>Vtuber Updates</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h2><u>News</u></h2>
+                    <ul>
+                        <li>Katsu Vtuber News</li>
+                        <li>Stream and Event Dates</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="image">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <a href="about.html">
+                        <img src="img/KPV.png" alt="Kat Price Vtuber Logo" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+                        <div class="text">About Kat Price</div>
+                    </a>
+                </div>
+    
+                <div class="mySlides fade">
+                    <a href="streams.html">
+                        <img src="img/splash_screen_1.png" alt="Stream Splash Screen" style="width:100%">
+                        <div class="text">Stream Schedule and VODs</div>
+                    </a>
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+    
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <div class="footer">
+            <div class="social-links">
+                <a target="_blank" href="https://www.instagram.com/katpricevtuber/" class="social-link">
+                    <i class="fa fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/@KatPriceVtuber" class="social-link">
+                    <i class="fa fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a target="_blank" href="https://www.twitch.tv/katpricevtuber" class="social-link">
+                    <i class="fa fa-twitch"></i>
+                    <span>Twitch</span>
+                </a>
+                <a href="contact.html" class="social-link">
+                    <i class="fa fa-envelope"></i>
+                    <span>Contact Us</span>
                 </a>
             </div>
+            <p>&copy; Kat Price Games, 2024</p>
         </div>
-    </div>
-    <hr>
+    </footer>
 </body>
-<footer>
-    <div class="footer">
-        <a target="_blank" href="https://www.instagram.com/katpricevtuber/">
-            <i class="fa fa-instagram" style="font-size:24px;"></i>Kat Price Games Instagram</a> |
-        <a target="_blank" href="https://www.youtube.com/@KatPriceVtuber">
-            <i class="fa fa-youtube" style="font-size:24px;"></i>Kat Price Games Youtube</a> |
-        <a target="_blank" href="https://www.twitch.tv/katpricevtuber">
-            <i class="fa fa-twitch" style="font-size:24px;"></i>Kat Price Games twitch</a>
-    </div>
-    <p style="text-align: center;">&copy; Kat Price Games, 2024</p>
-</footer>
-
-
 </html>

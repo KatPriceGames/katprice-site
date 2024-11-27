@@ -1,4 +1,5 @@
 html {
+    background-color: #FFF5F5;
     background-image: url(../img/main_menu\ \(2\).png);
     background-size: cover;
     background-position: center;
@@ -6,7 +7,7 @@ html {
 }
 
 body {
-    background-color: rgba(248, 180, 180, 0.95);
+    background-color: #FFE6E6;
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -125,6 +126,53 @@ hr {
     height: 2px;
     background: #600502;
     margin: 30px 0;
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #600502;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    background-color: rgba(96, 5, 2, 0.1);
+}
+
+.footer i {
+    margin-right: 8px;
+}
+
+.footer p {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Responsive Footer */
+@media (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer a {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* Media Queries */

@@ -1,5 +1,9 @@
 html {
+    background-color: #FFF5F5;
     background-image: url(../img/backround.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     width: auto;
 }
 
@@ -8,24 +12,29 @@ body {
     margin: auto;
     margin-top: 100px;
     font-family: Arial, sans-serif;
-    color: white;
-    background-color: #800000;  /* Wine Red background color */
+    color: #2A2A2A;
+    background-color: #FFE6E6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(96, 5, 2, 0.1);
 }
 
 header h1 {
     font-size: 3rem;
-    color: #fff;
+    color: #600502;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #description {
     font-size: 1.25rem;
-    color: #fff;
+    color: #2A2A2A;
     text-align: center;
     margin: 20px 0;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 245, 245, 0.9);
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
 }
 
 .clearfix {
@@ -35,49 +44,54 @@ header h1 {
 /* Gallery Section */
 div.gallery {
     display: flex;
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    flex-wrap: wrap; /* Ensures the images wrap to the next row on smaller screens */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 40px;
-    gap: 20px; /* Adds space between items */
+    gap: 20px;
 }
 
 div.gallery a {
     text-align: center;
     display: block;
-    color: white;
+    color: #600502;
     text-decoration: none;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    background-color: rgba(255, 245, 245, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
+}
+
+div.gallery a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(96, 5, 2, 0.2);
 }
 
 div.gallery img {
-    display: block;
-    margin: 0 auto;  /* Ensures the images are centered */
     border-radius: 10px;
     transition: transform 0.3s ease;
-    max-width: 100%;  /* Ensures the image doesn't overflow */
-    height: auto;
 }
 
-div.gallery img:hover {
-    transform: scale(1.1);
+div.gallery p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #600502;
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-/* Footer */
 footer {
-    text-align: center;
     margin-top: 40px;
-    background-color: #600502;
-    padding: 10px;
+    padding: 20px;
+    background-color: rgba(255, 245, 245, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
+    text-align: center;
 }
 
 footer p {
-    color: white;
-    font-size: 1rem;
+    color: #600502;
+    font-weight: bold;
+    margin: 0;
 }
 
 /* Responsive Styles */
