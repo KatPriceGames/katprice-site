@@ -29,11 +29,9 @@
                 <div class="video-thumbnail" data-video-id="cU930hgTQYY">
                     <img src="https://img.youtube.com/vi/cU930hgTQYY/0.jpg" alt="Video 1">
                 </div>
-                <div class="video-thumbnail" data-video-id="mSCcZS7Wfic">
-                    <img src="https://img.youtube.com/vi/mSCcZS7Wfic/0.jpg" alt="Video 2">
-                </div>
                 <div class="video-thumbnail" data-video-id="Wp7dx8oKfD8">
-                    <img src="https://img.youtube.com/vi/Wp7dx8oKfD8/0.jpg" alt="Video 3">
+                    <img src="img/next stream.png" alt="Video 2">
+                </div>
                 </div>
             </div>
         
@@ -43,7 +41,7 @@
                         src="https://www.youtube.com/embed/cU930hgTQYY?si=cvBddNsrsCTRqkKA" 
                         title="YouTube video player" 
                         frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerpolicy="strict-origin-when-cross-origin" 
                         allowfullscreen>
                 </iframe>
@@ -64,7 +62,7 @@
                     const videoId = this.getAttribute('data-video-id');
                     
                     // Update the iframe src to the new video
-                    videoPlayer.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                    videoPlayer.src = `https://www.youtube.com/embed/${videoId}?`;
                 });
             });
         </script>
