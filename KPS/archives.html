@@ -24,8 +24,23 @@
     <main>
         <section class="content-section">
             <h1>Stream Archives</h1>
+            <div class="video-gallery">
+                <!-- Thumbnails for each video -->
+                <div class="video-thumbnail" data-video-id="cU930hgTQYY">
+                    <img src="https://img.youtube.com/vi/cU930hgTQYY/0.jpg" alt="Video 1">
+                </div>
+                <div class="video-thumbnail" data-video-id="qHTUAK1vgP8">
+                    <img src="https://img.youtube.com/vi/qHTUAK1vgP8/0.jpg" alt="Video 2">
+                </div>
+                <div class="video-thumbnail" data-video-id="Wp7dx8oKfD8">
+                    <img src="https://img.youtube.com/vi/Wp7dx8oKfD8/0.jpg" alt="Video 3">
+                </div>
+            </div>
+        
+            <!-- Video container where the selected video will be embedded -->
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/cU930hgTQYY?si=cvBddNsrsCTRqkKA" 
+                <iframe id="video-player" 
+                        src="https://www.youtube.com/embed/cU930hgTQYY?si=cvBddNsrsCTRqkKA" 
                         title="YouTube video player" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -34,6 +49,7 @@
                 </iframe>
             </div>
         </section>
+        
     </main>
 
     <footer>
