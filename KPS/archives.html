@@ -29,16 +29,15 @@
                 <div class="video-thumbnail" data-video-id="cU930hgTQYY">
                     <img src="https://img.youtube.com/vi/cU930hgTQYY/0.jpg" alt="Video 1">
                 </div>
-                <div class="video-thumbnail" data-video-id="">
-                    <img src="img/next stream.png" alt="Video 2">
-                </div>
+                <div class="video-thumbnail" data-video-id="wyqpRqW_QiQ">
+                    <img src="https://img.youtube.com/vi/wyqpRqW_QiQ/0.jpg" alt="Video 2">
                 </div>
             </div>
-        
+            
             <!-- Video container where the selected video will be embedded -->
             <div class="video-container">
                 <iframe id="video-player" 
-                        src="https://www.youtube.com/embed/cU930hgTQYY?si=cvBddNsrsCTRqkKA" 
+                        src="" 
                         title="YouTube video player" 
                         frameborder="0" 
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -62,7 +61,7 @@
                     const videoId = this.getAttribute('data-video-id');
                     
                     // Update the iframe src to the new video
-                    videoPlayer.src = `https://www.youtube.com/embed/${videoId}?`;
+                    videoPlayer.src = `https://www.youtube.com/embed/${videoId}?rel=0`;
                 });
             });
         </script>
