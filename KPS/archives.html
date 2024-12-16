@@ -29,8 +29,8 @@
                 <div class="video-thumbnail" data-video-id="cU930hgTQYY">
                     <img src="https://img.youtube.com/vi/cU930hgTQYY/0.jpg" alt="Video 1">
                 </div>
-                <div class="video-thumbnail" data-video-id="qHTUAK1vgP8">
-                    <img src="https://img.youtube.com/vi/qHTUAK1vgP8/0.jpg" alt="Video 2">
+                <div class="video-thumbnail" data-video-id="mSCcZS7Wfic">
+                    <img src="https://img.youtube.com/vi/mSCcZS7Wfic/0.jpg" alt="Video 2">
                 </div>
                 <div class="video-thumbnail" data-video-id="Wp7dx8oKfD8">
                     <img src="https://img.youtube.com/vi/Wp7dx8oKfD8/0.jpg" alt="Video 3">
@@ -49,6 +49,25 @@
                 </iframe>
             </div>
         </section>
+        
+        <script>
+            // Get all video thumbnails
+            const thumbnails = document.querySelectorAll('.video-thumbnail');
+        
+            // Get the iframe element
+            const videoPlayer = document.getElementById('video-player');
+        
+            // Add click event listeners to each thumbnail
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    // Get the video ID from the data attribute of the clicked thumbnail
+                    const videoId = this.getAttribute('data-video-id');
+                    
+                    // Update the iframe src to the new video
+                    videoPlayer.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                });
+            });
+        </script>
         
     </main>
 
