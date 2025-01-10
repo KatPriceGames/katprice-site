@@ -46,9 +46,9 @@ h1 {
 }
 
 .contact-container {
-    max-width: 600px;
+    max-width: 700px; /* Increased max-width */
     margin: 30px auto;
-    padding: 25px;
+    padding: 35px; /* Increased padding */
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(96, 5, 2, 0.2);
@@ -156,6 +156,7 @@ footer {
 }
 
 
+
 /* Responsive Footer */
 @media (max-width: 480px) {
     .footer {
@@ -178,7 +179,7 @@ footer {
 
     .contact-container {
         margin: 20px 15px;
-        padding: 20px;
+        padding: 25px;
     }
 }
 
@@ -186,6 +187,10 @@ footer {
     body {
         width: 100%;
         padding: 10px;
+    }
+
+    .contact-container {
+        padding: 20px; /* Adjusted padding */
     }
 
     button {
