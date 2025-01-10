@@ -18,7 +18,10 @@ body {
 
 /* Navigation */
 #navBar {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    background-color: rgba(255, 245, 245, 0.9);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .navLogo {
@@ -107,6 +110,15 @@ hr {
 }
 
 /* Footer */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #FFF5F5;
+    border-radius: 10px;
+    box-shadow: 0 -2px 4px rgba(96, 5, 2, 0.1);
+    text-align: center;
+}
+
 .footer {
     text-align: center;
     padding: 20px 0;
