@@ -1,104 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Kat Price Streams</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/KPV.png">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/gallery.js" defer></script>
-</head>
+    <head>
+        <title>Kat Price Streams</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/KPV.png">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/gallery.js" defer></script>
+    </head>
 
-<body>
-    <header>
-        <nav id="navBar">
-            <div class="nav-container">
-                <a href="../index.html" class="back-button">
-                    <i class="fa fa-arrow-left"></i>
-                    Back to main page
-                </a>
-                <div id="mainlogo">
-                    <a href="index.html">
-                        <img src="img/KPG.png" alt="Kat Price games logo" class="navLogo2">
+    <body>
+        <header>
+            <nav id="navBar">
+                <div class="nav-container">
+                    <a href="../index.html" class="back-button">
+                        <i class="fa fa-arrow-left"></i>
+                        Back to main page
                     </a>
+                    <div id="mainlogo">
+                        <a href="index.html">
+                            <img src="img/KPG.png" alt="Kat Price games logo"
+                                class="navLogo2">
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <main>
+        <main>
+            <hr>
+            <h1 id="welcome">Welcome to Kat Price Games Streams</h1>
+
+            <section class="welcome-section">
+                <div class="info-container">
+                    <div class="info-section">
+                        <h2><u>Updates</u></h2>
+                        <ul>
+                            <li>Stream Updates</li>
+                            <li>media updates</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-section">
+                        <h2><u>stream news</u></h2>
+                        <ul>
+                            <li>stream VODs</li>
+                            <li>stream Schedule</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="image">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <a href="about.html">
+                            <img src="img/KPG.png" alt="Kat Price  Logo"
+                                style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+                            <div class="text">About Kat Price</div>
+                        </a>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <a href="streams.html">
+                            <img src="img/media.png" alt="Stream Splash Screen"
+                                style="width:100%">
+                            <div class="text">Stream Schedule and VODs</div>
+                        </a>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </section>
+        </main>
+
         <hr>
-        <h1 id="welcome">Welcome to Kat Price Games Streams</h1>
-        
-        <section class="welcome-section">
-            <div class="info-container">
-                <div class="info-section">
-                    <h2><u>Updates</u></h2>
-                    <ul>
-                        <li>Stream Updates</li>
-                        <li>media updates</li>
-                    </ul>
-                </div>
 
-                <div class="info-section">
-                    <h2><u>stream news</u></h2>
-                    <ul>
-                        <li>stream VODs</li>
-                        <li>stream Schedule</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="image">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <a href="about.html">
-                        <img src="img/KPG.png" alt="Kat Price  Logo" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
-                        <div class="text">About Kat Price</div>
-                    </a>
-                </div>
-    
-                <div class="mySlides fade">
-                    <a href="streams.html">
-                        <img src="img/media.png" alt="Stream Splash Screen" style="width:100%">
-                        <div class="text">Stream Schedule and VODs</div>
-                    </a>
-                </div>
-    
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-    
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-            </div>
-        </section>
-    </main>
-
-    <hr>
-
-    <footer>
+        <footer>
             <div class="footer">
-                <a target="_blank" href="https://www.instagram.com/katpricegames/">
-                    <i class="fa fa-instagram"></i>Kat Price Games Instagram</a> |
-                <a target="_blank" href="https://www.youtube.com/@KatPriceGames">
-                    <i class="fa fa-youtube"></i>Kat Price Games Youtube</a> |
-                <a target="_blank" href="https://www.twitch.tv/katpricegames">
-                    <i class="fa fa-twitch"></i>Kat Price Games twitch</a>
+                <div class="social-links">
+                    <a target="_blank"
+                        href="https://www.instagram.com/katpricegames/"
+                        class="social-link">
+                        <i class="fa fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a target="_blank"
+                        href="https://www.youtube.com/@KatPriceGames"
+                        class="social-link">
+                        <i class="fa fa-youtube"></i>Youtube</a>
+                    <a target="_blank"
+                        href="https://www.twitch.tv/katpricegames"
+                        class="social-link">
+                        <i class="fa fa-twitch"></i>Twitch</a>
+                    <a href="contact.html" class="social-link">
+                        <i class="fa fa-envelope"></i>
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+                <p>&copy; Kat Price Games, 2025</p>
             </div>
-                <a href="contact.html" class="social-link">
-                    <i class="fa fa-envelope"></i>
-                    <span>Contact Us</span>
-                </a>
-            </div>
-            <p>&copy; Kat Price Games, 2025</p>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
+
 </html>

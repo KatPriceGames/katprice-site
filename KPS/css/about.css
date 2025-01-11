@@ -1,7 +1,7 @@
 /* HTML and Body Styles */
 html {
     background-color: #FFF5F5;
-    background-image: url(../img/backround.png);
+    background-image: url(../img/main_menu\ \(2\).png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -20,10 +20,10 @@ body {
 
 /* Navigation */
 #navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    background-color: rgba(255, 245, 245, 0.9);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #mainlogo {
@@ -77,45 +77,67 @@ h1 {
 
 /* Dividers */
 hr {
-    border: none;
+    border: 0;
     height: 2px;
-    background: #600502;
+    background-color: #600502;
     margin: 30px 0;
+    opacity: 0.2;
 }
 
 /* Footer Styles */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #FFF5F5;
+    border-radius: 10px;
+    box-shadow: 0 -2px 4px rgba(96, 5, 2, 0.1);
+    text-align: center;
+}
+
 .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px 0;
+    gap: 15px;
+    text-align: center;
 }
 
-.footer a {
+.footer .social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    color: #600502;
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
-    text-decoration: none;
-    color: #600502;
-    padding: 10px 15px;
-    border-radius: 5px;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 20px;
     transition: all 0.3s ease;
+    background-color: rgba(255, 230, 230, 0.5);
+    min-width: 120px;
 }
 
-.footer a:hover {
-    background-color: rgba(96, 5, 2, 0.1);
+.social-link:hover {
+    background-color: #600502;
+    color: #FFF5F5;
+    transform: translateY(-2px);
 }
 
-.footer i {
-    margin-right: 8px;
+.social-link i {
+    font-size: 24px;
 }
 
 .footer p {
-    width: 100%;
-    text-align: center;
-    margin-top: 15px;
+    margin: 15px 0 0;
+    color: #2A2A2A;
 }
+
 
 /* Responsive Footer */
 @media (max-width: 480px) {
@@ -160,9 +182,6 @@ div.desc {
     text-align: center;
 }
 
-hr#red {
-    background-color: red;
-}
 
 #images {
     background-color: #600502;
