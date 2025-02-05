@@ -1,14 +1,1 @@
 Website to do:
-
-KAT PRICE GAMES FOLDER:
-games.html (colour pallet)
-
-TROP.html (layout and colour pallet)
-
-KAT PRICE GAMES STREAM FOLDER:
-
-index.html(background and logos)
-
-about.html (everything)
-
-make steams.html

@@ -1,7 +1,7 @@
 /* HTML and Body Styles */
 html {
     background-color: #FFF5F5;
-    background-image: url(../img/main_menu\ \(2\).png);
+    background-image: url(../img/backround.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -137,7 +137,6 @@ footer {
     margin: 15px 0 0;
     color: #2A2A2A;
 }
-
 
 /* Responsive Footer */
 @media (max-width: 480px) {

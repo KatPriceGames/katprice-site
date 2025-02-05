@@ -24,6 +24,7 @@ body {
     border-radius: 10px;
     padding: 10px;
 }
+
 .navLogo2 {
     display: block;
     margin: auto;
@@ -46,9 +47,9 @@ h1 {
 }
 
 .contact-container {
-    max-width: 700px; /* Increased max-width */
+    max-width: 700px;
     margin: 30px auto;
-    padding: 35px; /* Increased padding */
+    padding: 35px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(96, 5, 2, 0.2);
@@ -155,8 +156,6 @@ footer {
     color: #2A2A2A;
 }
 
-
-
 /* Responsive Footer */
 @media (max-width: 480px) {
     .footer {
@@ -190,7 +189,7 @@ footer {
     }
 
     .contact-container {
-        padding: 20px; /* Adjusted padding */
+        padding: 20px;
     }
 
     button {
