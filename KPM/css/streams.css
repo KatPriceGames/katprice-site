@@ -20,6 +20,32 @@ body {
     box-shadow: 0 0 20px rgba(96, 5, 2, 0.1);
     border-radius: 10px;
 }
+.back-button {
+    position: absolute;
+    left: 20px;
+    background-color: #600502;
+    color: #FFF5F5 !important;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.2);
+}
+
+.back-button:hover {
+    background-color: #8A0804;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(96, 5, 2, 0.3);
+}
+
+.back-button i {
+    font-size: 18px;
+}
 
 /* Navigation Styles */
 #navBar {
@@ -181,6 +207,10 @@ h1 {
     box-shadow: 0 4px 8px rgba(96, 5, 2, 0.3);
 }
 
+.archive-link-youtube {
+    display: none;
+}
+
 /* Footer Styles */
 footer {
     margin-top: auto;
@@ -213,6 +243,7 @@ footer {
 @media screen and (max-width: 768px) {
     body {
         padding: 15px;
+        width: 90%;
     }
 
     .nav-container {
@@ -222,6 +253,7 @@ footer {
 
     .back-button {
         position: static;
+        margin-bottom: 15px;
     }
 
     .content-section {
@@ -252,11 +284,20 @@ footer {
     .stream-details p {
         font-size: 1.1em;
     }
+
+    #navBar {
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     body {
         padding: 10px;
+        width: 95%;
+    }
+    .back-button {
+        padding: 12px 24px;
+        font-size: 1em;
     }
 
     .content-section {
@@ -269,5 +310,25 @@ footer {
 
     .nav-container {
         gap: 15px;
+    }
+
+    #navBar {
+        padding: 10px;
+    }
+    
+    .archive-link {
+        display: none;
+    }
+
+    .archive-link-youtube {
+            display: inline-block;
+            background-color: #600502;
+            color: #FFF5F5;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(96, 5, 2, 0.2);
     }
 }

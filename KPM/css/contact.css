@@ -1,6 +1,6 @@
 html {
     background-color: #FFF5F5;
-    background-image: url(../img/background.png);
+    background-image: url(../img/backround.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -15,6 +15,33 @@ body {
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    background-color: #600502;
+    color: #FFF5F5 !important;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.2);
+}
+
+.back-button:hover {
+    background-color: #8A0804;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(96, 5, 2, 0.3);
+}
+
+.back-button i {
+    font-size: 18px;
 }
 
 /* Navigation */

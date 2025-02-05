@@ -8,7 +8,8 @@ html {
 }
 
 body {
-    width: 60%;
+    width: 80%;
+    max-width: 1200px;
     margin: auto;
     margin-top: 100px;
     font-family: Arial, sans-serif;
@@ -95,20 +96,52 @@ footer p {
 }
 
 /* Responsive Styles */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     body {
-        width: 100%;
-        margin: auto;
+        width: 90%;
         margin-top: 50px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #description {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    div.gallery a {
+        padding: 15px;
     }
 
     div.gallery img {
         width: 150px;
-        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 95%;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
     }
 
     #description {
         font-size: 1rem;
-        padding: 15px;
+        padding: 10px;
+    }
+
+    div.gallery a {
+        padding: 10px;
+    }
+
+    div.gallery img {
+        width: 150px;
     }
 }
