@@ -1,0 +1,147 @@
+html {
+    background-color: #FFF5F5;
+    background-image: url(../img/backround.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: auto;
+}
+
+body {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    color: #2A2A2A;
+    background-color: #FFE6E6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(96, 5, 2, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #600502;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#description {
+    font-size: 1.25rem;
+    color: #2A2A2A;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 245, 245, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+/* Gallery Section */
+div.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+div.gallery a {
+    text-align: center;
+    display: block;
+    color: #600502;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    background-color: rgba(255, 245, 245, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
+}
+
+div.gallery a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(96, 5, 2, 0.2);
+}
+
+div.gallery img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+div.gallery p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #600502;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 245, 245, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
+    text-align: center;
+}
+
+footer p {
+    color: #600502;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        width: 90%;
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #description {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    div.gallery a {
+        padding: 15px;
+    }
+
+    div.gallery img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 95%;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #description {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    div.gallery a {
+        padding: 10px;
+    }
+
+    div.gallery img {
+        width: 150px;
+    }
+}
