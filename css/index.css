@@ -339,7 +339,7 @@ footer {
     .prev, .next {
         padding: 8px;
         font-size: 16px;
-    }
+    }  
 }
 
 @media screen and (max-width: 480px) {
@@ -359,4 +359,22 @@ footer {
     .text {
         font-size: 14px;
     }
+    .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #a52a2a; /* red/brown like your left button */
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 5px;
+  transition: background 0.3s;
+  user-select: none;
+  border: none;
+}
 }
