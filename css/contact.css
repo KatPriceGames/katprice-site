@@ -1,6 +1,6 @@
 html {
     background-color: #FFF5F5;
-    background-image: url(../img/background.png);
+    background-image: url(../img/backround.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,12 +17,45 @@ body {
     border-radius: 10px;
 }
 
+.back-button {
+    background-color: #600502;
+    color: #FFF5F5 !important;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.2);
+
+    /* remove old positioning */
+    left: auto;
+    margin: 0 auto 20px;
+    text-align: center;
+    margin-top: -20px; /* pulls it up into the white area */
+}
+
+.back-button:hover {
+    background-color: #8A0804;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(96, 5, 2, 0.3);
+}
+
+.back-button i {
+    font-size: 18px;
+}
+
 /* Navigation */
 #navBar {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     background-color: rgba(255, 245, 245, 0.9);
     border-radius: 10px;
     padding: 10px;
+
+    
 }
 
 .navLogo2 {

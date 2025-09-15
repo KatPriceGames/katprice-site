@@ -1,147 +1,362 @@
+/* Base Styles */
 html {
     background-color: #FFF5F5;
     background-image: url(../img/backround.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    width: auto;
 }
 
 body {
-    width: 80%;
+    background-color: #FFE6E6;
     max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
+    margin: 0 auto;
+    padding: 20px;
     font-family: Arial, sans-serif;
     color: #2A2A2A;
-    background-color: #FFE6E6;
-    border-radius: 10px;
-    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 0 20px rgba(96, 5, 2, 0.1);
+    border-radius: 10px;
 }
 
-header h1 {
-    font-size: 3rem;
-    color: #600502;
-    margin-bottom: 20px;
-    text-align: center;
+main {
+    flex: 1;
 }
 
-#description {
-    font-size: 1.25rem;
-    color: #2A2A2A;
-    text-align: center;
-    margin: 20px 0;
-    padding: 20px;
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #600502;
+    margin: 30px 0;
+    opacity: 0.2;
+}
+
+/* Navigation */
+#navBar {
+    margin-bottom: 40px;
     background-color: rgba(255, 245, 245, 0.9);
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
+    padding: 10px;
 }
 
-.clearfix {
-    overflow: hidden;
-}
-
-/* Gallery Section */
-div.gallery {
+.nav-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    gap: 20px;
+    padding: 20px 0;
+    margin: 0 auto;
 }
 
-div.gallery a {
+.back-button {
+    position: absolute;
+    left: 20px;
+    background-color: #600502;
+    color: #FFF5F5 !important;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.2);
+}
+
+.back-button:hover {
+    background-color: #8A0804;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(96, 5, 2, 0.3);
+}
+
+.back-button i {
+    font-size: 18px;
+}
+
+#mainlogo {
     text-align: center;
-    display: block;
+    padding: 0 20px;
+}
+
+.navLogo2 {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.navLogo2:hover {
+    transform: scale(1.1);
+}
+
+/* Welcome Section */
+#welcome {
+    color: #600502;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(96, 5, 2, 0.1);
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.info-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #FFF5F5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
+    border: 1px solid rgba(96, 5, 2, 0.1);
+}
+
+.info-section h2 {
+    color: #600502;
+    margin-bottom: 15px;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-section li {
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(96, 5, 2, 0.2);
+    color: #2A2A2A;
+}
+
+/* Slideshow */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    background-color: #FFF5F5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #600502;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(255, 230, 230, 0.9);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #600502;
+    color: #FFF5F5;
+}
+
+.text {
+    color: #600502;
+    font-size: 15px;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(255, 245, 245, 0.9);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #FFE6E6;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: 1px solid rgba(96, 5, 2, 0.2);
+}
+
+.active, .dot:hover {
+    background-color: #600502;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #FFF5F5;
+    border-radius: 10px;
+    box-shadow: 0 -2px 4px rgba(96, 5, 2, 0.1);
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
     color: #600502;
     text-decoration: none;
-    transition: transform 0.3s ease;
-    padding: 20px;
-    background-color: rgba(255, 245, 245, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 230, 230, 0.5);
+    min-width: 120px;
 }
 
-div.gallery a:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(96, 5, 2, 0.2);
+.social-link:hover {
+    background-color: #600502;
+    color: #FFF5F5;
+    transform: translateY(-2px);
 }
 
-div.gallery img {
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+.social-link i {
+    font-size: 24px;
 }
 
-div.gallery p {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #600502;
+.footer p {
+    margin: 15px 0 0;
+    color: #2A2A2A;
 }
 
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: rgba(255, 245, 245, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(96, 5, 2, 0.1);
-    text-align: center;
+/* Round arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #a52a2a; /* red/brown like your left button */
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 5px;
+  transition: background 0.3s;
+  user-select: none;
+  border: none;
 }
 
-footer p {
-    color: #600502;
-    font-weight: bold;
-    margin: 0;
+.next {
+  right: 0.5px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+.prev {
+  left: 0.5px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #7a1e1e; /* darker on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     body {
-        width: 90%;
-        margin-top: 50px;
         padding: 15px;
     }
 
-    header h1 {
-        font-size: 2.5rem;
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 0;
+    }
+    
+    .back-button {
+        position: static;
+        margin-bottom: 15px;
     }
 
-    #description {
-        font-size: 1.1rem;
-        padding: 15px;
+    .navLogo2 {
+        width: 120px;
     }
 
-    div.gallery a {
-        padding: 15px;
+    #welcome {
+        font-size: 2em;
     }
 
-    div.gallery img {
-        width: 150px;
+    .info-section {
+        min-width: 200px;
+    }
+
+    .prev, .next {
+        padding: 8px;
+        font-size: 16px;
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        width: 95%;
-        margin-top: 30px;
-        padding: 10px;
+@media screen and (max-width: 480px) {
+    .back-button {
+        padding: 12px 24px;
+        font-size: 1em;
     }
 
-    header h1 {
-        font-size: 2rem;
+    .navLogo2 {
+        width: 100px;
     }
 
-    #description {
-        font-size: 1rem;
-        padding: 10px;
+    #welcome {
+        font-size: 1.8em;
     }
 
-    div.gallery a {
-        padding: 10px;
-    }
-
-    div.gallery img {
-        width: 150px;
+    .text {
+        font-size: 14px;
     }
 }

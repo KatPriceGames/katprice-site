@@ -242,29 +242,55 @@ h1 {
 /* Footer Styles */
 footer {
     margin-top: auto;
+    padding: 20px;
+    background-color: #FFF5F5;
+    border-radius: 10px;
+    box-shadow: 0 -2px 4px rgba(96, 5, 2, 0.1);
+    text-align: center;
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 245, 245, 0.9);
-    border-radius: 10px;
 }
 
-.footer a {
+.footer .social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
     color: #600502;
     text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 230, 230, 0.5);
+    min-width: 120px;
 }
 
-.footer a:hover {
-    color: #FF9999;
+.social-link:hover {
+    background-color: #600502;
+    color: #FFF5F5;
+    transform: translateY(-2px);
 }
 
-.footer i {
-    margin-right: 5px;
-    font-size: 18px;
+.social-link i {
+    font-size: 24px;
+}
+
+.footer p {
+    margin: 15px 0 0;
+    color: #2A2A2A;
 }
 
 /* Responsive Design */

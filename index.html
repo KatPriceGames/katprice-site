@@ -1,52 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Kat Price Brand</title>
+    <!-- ========== META & TITLE ========== -->
+    <title>Kat Price Games</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Welcome to the Official Kat Price Hub. Your one-stop destination for all things Kat Price! Stay up-to-date with the latest news, from live stream updates to game releases and everything in between. Whether you're a longtime fan or just discovering Kat Price, this is the place to catch all the exciting announcements and content.">
-    <meta name="keywords" content="Kat Price, Kat Price Games, kat price twitch, kat price brands ">
+
+    <!-- ========== FAVICON & STYLES ========== -->
     <link rel="icon" href="img/KPG.png">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="js/gallery.js" defer></script>
+
+    <!-- ========== SEO KEYWORDS ========== -->
+    <meta name="keywords" content="Kat Price, Kat Price Brand, kat Price YouTube, Kat Price Twitch, Kat Price official site, katpricebrand.org, Kat Price Twitch channel, Kat Price gaming streams, 
+                                   Kat Price YouTube videos, Kat Price content creator, Kat Price social media, Kat Price gaming community, Kat Price online presence">
 </head>
 
 <body>
-    <!-- Main Title -->
+    <!-- ========== HEADER & NAVIGATION ========== -->
     <header>
-        <h1>Kat Price Brand</h1>
+        <nav id="navBar">
+            <div class="nav-container">
+                <div id="mainlogo">
+                    <img src="img/KPG.png" alt="Kat Price games logo" class="navLogo2">
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Description Section -->
-    <section id="description">
-        <p>
-            Welcome to the Official Kat Price Hub. Your one-stop destination for all things Kat Price! Stay up-to-date with the latest news,
-            from live stream updates to game releases and everything in between. Whether you're a longtime fan or just discovering Kat Price,
-            this is the place to catch all the exciting announcements and content.
-        </p>
-    </section>
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- ===== Welcome Section ===== -->
+        <h1 id="welcome">Welcome to Kat Price Games</h1>
+        <hr>
+        <!-- ===== Announcements ===== -->
+        <h1 id="welcome"><u>New Updates</u></h1>
+        <section class="welcome-section">
+            <div class="info-container">
+                <div class="info-section">
+                    <h2><u>Site Update</u></h2>
+                    <ul>
+                        <li>
+                        massive new changes changes have been made to the site with a new layout and new pages and images have been
+                        added to site
+                        </li> 
+                    </ul>
+                </div>
+                <div class="info-section">
+                    <h2><u>Youtube Update</u></h2>
+                    <ul>
+                        <li>
+                            editing and new content will be coming soon starting with Yo-Kai Watch Nuzzlock Ep 2
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-section">
+                    <h2><u>Twitch Update</u></h2>
+                    <ul>
+                        <li>
+                          Twitch streams will be starting back up soon
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- Gallery Section -->
-    <div id="image">
-        <div class="clearfix">
-            <div class="gallery">
-                <a href="KPG/index.html">
-                    <img id="imgabout" src="img/KPG.png" alt="Kat Price Games" width="200" height="200">
-                    <p>Kat Price Games</p>
+        <!-- ===== Image Slideshow ===== -->
+        <hr>
+        <section id="image">
+            <div class="slideshow-container">
+                <!-- Slide 1 -->
+                <div class="mySlides fade">
+                    <a href="about.html">
+                        <img src="img/about.png" alt="Kat Price Logo"
+                             style="width:100%; display:block; margin:auto;">
+                        <div class="text">About Kat Price</div>
+                    </a>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="mySlides fade">
+                    <a href="media_select.html">
+                        <img src="img/media.png" alt="media links" style="width:100%">
+                        <div class="text">Twitch VODs and YouTube Content</div>
+                    </a>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="mySlides fade">
+                    <a href="Upcoming_Projects.html">
+                        <img src="img/Upcoming projects.png" alt="upcoming projects" style="width:100%">
+                        <div class="text">Upcoming Projects</div>
+                    </a>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Dots / navigation -->
+            <div style="text-align:center; margin-top:10px;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <hr>
+    <footer>
+        <div class="footer">
+            <div class="social-links">
+                <a target="_blank" href="https://www.instagram.com/katpricegames/" class="social-link">
+                    <i class="fa fa-instagram"></i> <span>Instagram</span>
                 </a>
-                <a href="KPM/index.html">
-                    <img src="img/KPG.png" alt="Kat Price Media" width="200" height="200">
-                    <p>Kat Price Media</p>
+                <a target="_blank" href="https://www.youtube.com/@KatPriceGames" class="social-link">
+                    <i class="fa fa-youtube"></i> Main YouTube
+                </a>
+                <a target="_blank" href="https://www.youtube.com/@KatPriceGamesVods" class="social-link">
+                    <i class="fa fa-youtube"></i> VODs
+                </a>
+                <a target="_blank" href="https://www.twitch.tv/katpricegames" class="social-link">
+                    <i class="fa fa-twitch"></i> Twitch
+                </a>
+                <a href="contact.html" class="social-link">
+                    <i class="fa fa-envelope"></i> <span>Contact Me</span>
                 </a>
             </div>
+            <p>&copy; Kat Price Games, 2025</p>
         </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; Kat Price Brand, 2025</p>
     </footer>
 </body>
-
 </html>
