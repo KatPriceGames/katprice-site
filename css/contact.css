@@ -80,9 +80,9 @@ h1 {
 }
 
 .contact-container {
-    max-width: 700px;
+    max-width: 900px;
     margin: 30px auto;
-    padding: 35px;
+    padding: 45px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(96, 5, 2, 0.2);
@@ -90,12 +90,14 @@ h1 {
 
 .form-group {
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 label {
-    display: block;
+    display: grid;
     color: #600502;
     margin-bottom: 5px;
+    margin-right: px;
     font-weight: bold;
 }
 
@@ -103,7 +105,7 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     border: 2px solid rgba(96, 5, 2, 0.2);
     border-radius: 5px;
     font-size: 1em;
